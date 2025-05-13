@@ -9,7 +9,7 @@
 		"format": "prettier --write package.json .prettierrc .vscode .eslintrc.cjs e2e .github *.md",
 		"format:check": "prettier --check package.json .prettierrc .vscode .eslintrc.cjs .github *.md",
 		"check-deps": "tsx scripts/check-deps.ts",
-		"dev": "pnpm --filter \"$npm_config_filter\" run dev || echo \"To start development server, specify the package using --filter option. Example: npm run dev --filter=@huggingface/inference\""
+		"dev": "npx pnpm --filter \"$npm_config_filter\" run dev || echo \"To start development server, specify the package using --filter option. Example: npm run dev --filter=@huggingface/inference\""
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^7.2.0",
